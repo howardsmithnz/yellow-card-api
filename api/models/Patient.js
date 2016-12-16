@@ -8,7 +8,17 @@
 module.exports = {
 
   attributes: {
+    firstName: {
+      type: 'string'
+    },
+    lastName: {
+      type: 'string'
+    },
 
+    // Add a reference to Pharmacist
+    owner: {
+      model: 'pharmacist'
+    }
   }
 };
 
