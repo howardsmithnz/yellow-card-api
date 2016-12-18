@@ -16,7 +16,7 @@ module.exports = {
     },
 
     // Add a reference to Pharmacist
-    owner: {
+    provider: {
       model: 'pharmacist'
     }
   }
