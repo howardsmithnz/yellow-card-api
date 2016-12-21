@@ -17,7 +17,7 @@ module.exports = {
 
     // Add a reference to Patients
     patients: {
-      collection: 'patient',
+      collection: 'Patient',
       via: 'provider'
     }
   }
