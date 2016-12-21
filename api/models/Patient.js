@@ -17,7 +17,8 @@ module.exports = {
 
     // Add a reference to Pharmacist
     provider: {
-      model: 'Pharmacist'
+      model: 'Pharmacist',
+      required: true
     }
   }
 };
