@@ -29,6 +29,7 @@ module.exports = {
       model: 'Pharmacist',
       required: true
     }
+    // TO DO: Add a reference to Medicines
   }
 };
 
