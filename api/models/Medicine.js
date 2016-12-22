@@ -8,7 +8,19 @@
 module.exports = {
 
   attributes: {
-
+    brandName: {
+      type: 'string'
+    },
+    genericName: {
+      type: 'string'
+    },
+    purpose: {
+        type: 'string'
+    },
+    instructions: {
+        type: 'string'
+    }
+    // add many-to-many link to Patient here 
   }
 };
 
