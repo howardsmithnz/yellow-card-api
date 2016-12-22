@@ -19,7 +19,28 @@ module.exports = {
     },
     instructions: {
         type: 'string'
-    }
+    },
+    
+    /* 
+     timings:{
+      type: 'json'
+     },
+      
+      Timings to look like this - 
+
+      timings:{
+        wake: 0,
+        breakfast: 0,
+        lunch: 0,
+        dinner: 0,
+        bedtime: 0,
+      }
+      
+      Storing as json object in model probably best bet, see
+      http://stackoverflow.com/questions/24020055/sails-js-nested-models
+    
+    */
+    
     // add many-to-many link to Patient here 
   }
 };
