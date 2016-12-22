@@ -14,6 +14,9 @@ module.exports = {
     lastName: {
       type: 'string'
     },
+    contact: {
+      type: 'string'
+    },
 
     // Add a reference to Patients
     patients: {

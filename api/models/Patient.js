@@ -14,6 +14,15 @@ module.exports = {
     lastName: {
       type: 'string'
     },
+    NHINumber: {
+        type: 'number'
+    },
+    contact: {
+        type: 'string'
+    },
+    medicine: {
+        type: 'string'
+    }, // expand this later
 
     // Add a reference to Pharmacist
     provider: {
