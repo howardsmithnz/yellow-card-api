@@ -12,6 +12,7 @@ a [Sails](http://sailsjs.org) application
 
 ### To do:
 - join Medicine model to other models
+- enforce models schema on all data
 - implement authorization on models
 - deploy (initially to Heroku)
 - refine!!
