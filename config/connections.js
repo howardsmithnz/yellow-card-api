@@ -47,6 +47,12 @@ module.exports.connections = {
   //   password: 'YOUR_MYSQL_PASSWORD', //optional
   //   database: 'YOUR_MYSQL_DB' //optional
   // },
+  
+  //custom connection for production
+  productionMongo: {
+      adapter: 'sails-mongo',
+      url: process.env.MONGODB_URI
+  }
 
   /***************************************************************************
   *                                                                          *
