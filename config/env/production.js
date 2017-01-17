@@ -23,6 +23,11 @@ module.exports = {
 
   models: {
         connection: 'productionMongo'
+    },
+
+  session: {
+        adapter: 'connect-mongo'
+        url: process.env.MONGODB_URI
     }
 
   /***************************************************************************
