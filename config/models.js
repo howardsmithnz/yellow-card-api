@@ -29,6 +29,7 @@ module.exports.models = {
   ***************************************************************************/
   // migrate: 'alter'
 
+  // only allow data to be added to the datastore if it matches the data model's schema
   schema:true
 
 };
