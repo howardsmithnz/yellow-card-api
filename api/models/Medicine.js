@@ -15,18 +15,16 @@ module.exports = {
       type: 'string'
     },
     purpose: {
-        type: 'string'
+      type: 'string'
     },
     instructions: {
-        type: 'string'
+      type: 'string'
     },
-    
-    /* 
-     timings:{
+    timings:{
       type: 'json'
-     },
+    },
       
-      Timings to look like this - 
+     /* Timings to look like this - 
 
       timings:{
         wake: 0,
@@ -42,6 +40,10 @@ module.exports = {
     */
     
     // add many-to-many link to Patient here 
+    prescribedTo: {
+      collection: 'Patient',
+      via: 'meds' 
+    }
   }
 };
 

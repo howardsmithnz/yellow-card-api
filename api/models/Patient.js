@@ -28,8 +28,12 @@ module.exports = {
     provider: {
       model: 'Pharmacist',
       required: true
-    }
+    },
     // TO DO: Add a reference to Medicines
+    meds: {
+      collection: 'Medicine', 
+      via: 'prescribedTo'
+    }
   }
 };
 
