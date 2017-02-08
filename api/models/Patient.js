@@ -22,14 +22,14 @@ module.exports = {
     },
     medicine: {
         type: 'string'
-    }, // expand this later
+    }, // delete this later
 
-    // Add a reference to Pharmacist
+    // A reference to Pharmacist
     provider: {
       model: 'Pharmacist',
       required: true
     },
-    // TO DO: Add a reference to Medicines
+    // A reference to Medicines
     meds: {
       collection: 'Medicine', 
       via: 'prescribedTo'
