@@ -24,7 +24,8 @@ module.exports = {
     // A reference to Pharmacist
     provider: {
       model: 'Pharmacist',
-      //required: true
+      //required: true - I want to add this back in later but it's causing issues
+      //                  when adding data
     },
     // A reference to Medicines
     meds: {
