@@ -15,19 +15,16 @@ module.exports = {
       type: 'string'
     },
     NHINumber: {
-        type: 'number'
+        type: 'numeric'
     },
     contact: {
         type: 'string'
     },
-    medicine: {
-        type: 'string'
-    }, // delete this later
 
     // A reference to Pharmacist
     provider: {
       model: 'Pharmacist',
-      required: true
+      //required: true
     },
     // A reference to Medicines
     meds: {
