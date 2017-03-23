@@ -15,7 +15,7 @@ module.exports = {
       type: 'string'
     },
     NHINumber: {
-        type: 'numeric'
+        type: 'alphanumeric'
     },
     contact: {
         type: 'string'
