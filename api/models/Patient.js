@@ -15,7 +15,7 @@ module.exports = {
       type: 'string'
     },
     NHINumber: {
-        type: 'string' // iconically NHI numbers have letters, eg ABC1234
+        type: 'alphanumeric' // iconically NHI numbers have letters, eg ABC1234
     },
     contact: {
         type: 'string'
