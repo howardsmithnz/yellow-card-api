@@ -31,6 +31,12 @@ module.exports = {
     meds: {
       collection: 'Medicine', 
       via: 'prescribedTo'
+    },
+    timingZones: {
+      type: 'array'
+    },
+    timingZonesObj: {
+      type: 'json'
     }
   }
 };
