@@ -16,6 +16,8 @@ module.exports = {
     var tZ = req.body.timingZones;
     console.log("tZ is: ", tZ);
     console.log("type of tZ is: ", (typeof tZ));
+    var tZArray = JSON.parse(tZ); // in ES6 Array.from() should also work here
+    //console.log("tZArray is : ", tZArray)
 
     Patient.create(
         {
@@ -23,7 +25,7 @@ module.exports = {
           lastName: req.body.lastName,
           NHINumber: req.body.NHINumber,
           contact: req.body.contact,
-          timingZones: req.body.timingZones,
+          timingZones: tZArray,
           timingZonesObj: req.body.timingZonesObj
         }
     ).exec(function () { console.log("I just did something")});
