@@ -13,11 +13,6 @@ module.exports = {
     return res.redirect('http://www.yahoo.com');
   },
   create: function (req, res) {
-    var tZ = req.body.timingZones;
-    console.log("tZ is: ", tZ);
-    console.log("type of tZ is: ", (typeof tZ));
-    var tZArray = JSON.parse(tZ); // in ES6 Array.from() should also work here
-    //console.log("tZArray is : ", tZArray)
 
     Patient.create(
         {
@@ -25,11 +20,11 @@ module.exports = {
           lastName: req.body.lastName,
           NHINumber: req.body.NHINumber,
           contact: req.body.contact,
-          timingZones: tZArray,
+          timingZones: req.body.timingZones,
           timingZonesObj: req.body.timingZonesObj
         }
-    ).exec(function () { console.log("I just did something")});
-    return res.send('Totally did it!');
+    ).exec(function () { console.log("New Patient added")});
+    return res.json(req.body);
   }
 };
 
