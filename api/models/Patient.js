@@ -28,9 +28,12 @@ module.exports = {
       //                  when adding data
     },
     // A reference to Medicines
+    // meds: {
+    //   collection: 'Medicine', 
+    //   via: 'prescribedTo'
+    // },
     meds: {
-      collection: 'Medicine', 
-      via: 'prescribedTo'
+      type: 'array'
     },
     timingZones: {
       type: 'array'

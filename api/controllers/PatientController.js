@@ -12,19 +12,19 @@ module.exports = {
   bye: function (req, res) {
     return res.redirect('http://www.yahoo.com');
   },
-  create: function (req, res) {
+  // create: function (req, res) {
 
-    Patient.create(
-        {
-          firstName: req.body.firstName,
-          lastName: req.body.lastName,
-          NHINumber: req.body.NHINumber,
-          contact: req.body.contact,
-          timingZones: req.body.timingZones,
-          timingZonesObj: req.body.timingZonesObj
-        }
-    ).exec(function () { console.log("New Patient added")});
-    return res.json(req.body);
-  }
+  //   Patient.create(
+  //       {
+  //         firstName: req.body.firstName,
+  //         lastName: req.body.lastName,
+  //         NHINumber: req.body.NHINumber,
+  //         contact: req.body.contact,
+  //         timingZones: req.body.timingZones,
+  //         timingZonesObj: req.body.timingZonesObj
+  //       }
+  //   ).exec(function () { console.log("New Patient added")});
+  //   return res.json(req.body);
+  // }
 };
 
