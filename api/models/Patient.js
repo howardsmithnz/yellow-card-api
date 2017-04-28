@@ -20,6 +20,9 @@ module.exports = {
     contact: {
         type: 'string'
     },
+    email: {
+        type: 'email'
+    },
 
     // A reference to Pharmacist
     provider: {

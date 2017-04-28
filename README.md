@@ -8,12 +8,13 @@ a [Sails](http://sailsjs.org) application
 - Patient joins to Pharmacist in a many-to-one relationship
 - GET, POST, PUT, DELETE HTTP verbs all working
 - Sails Bluebird API verbs Create, Find, Update, Destroy all working (only for development)
-- Medicine model created (not joined yet)
-- deploy (initially to Heroku)
+- Medicine model created (not joined yet - currently not used - see comment below)
+- meds array created within Patient model - use with care! (no validation possible)
+- deployed (initially to Heroku)
 
 ### To do:
 - join Medicine model to other models
-- enforce models schema on all data
+- enforce models schema on all data (i.e. validation)
 - implement authorization on models
 - refine!!
 
