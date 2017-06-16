@@ -7,7 +7,10 @@
 
 module.exports = {
   hi: function (req, res) {
-    return res.send('Hi there!');
+    console.log("req.body: " + req.body);
+    // return res.send('Hi there! Mr.' + req.body.lastName);
+    return res.json(req.body)
+
   },
   bye: function (req, res) {
     return res.redirect('http://www.yahoo.com');
