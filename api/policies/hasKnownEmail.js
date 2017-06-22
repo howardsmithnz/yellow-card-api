@@ -12,15 +12,13 @@ module.exports = function(req, res, next) {
   // User is allowed, proceed to the next policy, 
   // or if this is the last policy, the controller
 
-  // put body-parser code here?? Can't read req.body.email right now
 
-  // if (true) {
-  //   console.log("Hi There!")
-  //   console.log("Params: " + req.params)
-  //   console.log("Body: " + req.body)
-  //   // console.log("Email: " + req.body.email)
-  //   return next();
-  // }
+  if (true) {
+    console.log("Hi There!")
+    console.log("Body: " + req.body)
+    console.log("Email: " + req.body.email)
+    return next();
+  }
 
   // User is not allowed
   // (default res.forbidden() behavior can be overridden in `config/403.js`)
