@@ -36,8 +36,6 @@ module.exports.routes = {
     view: 'homepage'
   },
 
-  // 'get /patient/hi': 'PatientController.hi'
-
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
@@ -48,4 +46,6 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
+  // 'post /patient/login': 'PatientController.login'
+  
 };

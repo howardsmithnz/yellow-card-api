@@ -15,13 +15,15 @@ module.exports = {
       type: 'string'
     },
     NHINumber: {
-        type: 'alphanumeric' // iconically NHI numbers have letters, eg ABC1234
+      type: 'alphanumeric' // iconically NHI numbers have letters, eg ABC1234
     },
     contact: {
-        type: 'string'
+      type: 'string'
     },
     email: {
-        type: 'email'
+      type: 'email',
+      // required: true,
+      // unique: true
     },
 
     // A reference to Pharmacist
@@ -43,6 +45,14 @@ module.exports = {
     },
     timingZonesObj: {
       type: 'json'
+    },
+
+    compareEmail: function(email) {
+          if (email === this.email) {
+            console.log("GOOD")
+          } else {
+            console.log("BAD")
+          }
     }
   }
 };
