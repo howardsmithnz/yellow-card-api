@@ -12,17 +12,13 @@ module.exports = {
     // if the user has submitted a valid email and user name then let them proceed
     console.log("POST /patient/login hit...");
     sails.log.info(req.body);
-    console.log("req.body  is: " + req.body );
-    console.log("req.body.lastName  is: " + req.body.lastName );
-    console.log("req.body.email  is: " + req.body.email );
-    var email = req.body.email;
-
-    var query = Patient.find({
-      "email": email
-    }).exec(function(){console.log;})
-
-    return res.json({ "query": query });
+    Patient.find({
+      "firstName": req.body.firstName,
+      "lastName": req.body.lastName,
+      "email": req.body.email
+    }).exec(function(err, result){
+      return res.json({ "result": result });
+    })
   }
-  
 };
 
